@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 23, 59, 179)),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(255, 23, 59, 179)),
         useMaterial3: true,
       ),
       home: MyHomePage(),
@@ -57,24 +58,10 @@ class MyHomePage extends StatelessWidget {
                     const SizedBox(height: 20),
                     ElevatedButton(
                       onPressed: () {
-                        sendNumber('1234', context); // דוגמה לשליחת מספר קבוע לשרת
+                        sendNumber(
+                            '1234', context); // דוגמה לשליחת מספר קבוע לשרת
                       },
                       child: const Text('חפש'),
-                    ),
-                    const SizedBox(height: 20),
-                    Text(
-                      'הכותרת:',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      'התיאור:',
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
                     ),
                   ],
                 ),
